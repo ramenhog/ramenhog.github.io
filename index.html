@@ -1,4 +1,15 @@
-<html>
-  <h1>Hi</h1>
-</html>
-
+---
+layout: default
+---
+{% for post in site.posts %}
+  <article class="post">
+    <header class="post__title-bar">
+      <h2 class="post__title"><a href="{{post.url}}">{{ post.title }}</a></h2> 
+      <time class="post__date">{{ post.date  | date: "%B %-d %Y" }}</time>
+    </header>
+    <div class="post__content">
+      {{ post.excerpt }}
+    </div>
+    <p><a href="{{ post.url }}">Keep reading</a></p>
+  </article>
+{% endfor %}
