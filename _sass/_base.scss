@@ -3,7 +3,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 0 22px;
-  overflow: hidden;
+  box-sizing: border-box;
 
   &--nav {
     display: flex;
@@ -13,6 +13,7 @@
 
   &--main {
     padding-top: 50px;
+    padding-right: 80px;
   }
 }
 
@@ -78,7 +79,7 @@
 }
 
 img {
-  width: 110%;
-  margin-left: -5%;
+  width: 114%;
+  margin-left: -7%;
 }
 

@@ -18,4 +18,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
 permalink: /:categories/:title
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 highlighter: rouge

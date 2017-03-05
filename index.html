@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in site.posts %}
-  <article class="post">
+  <article class="post post--excerpt">
     <header class="post__title-bar">
       <h2 class="post__title"><a href="{{post.url}}">{{ post.title }}</a></h2> 
       <time class="post__date">{{ post.date  | date: "%B %-d %Y" }}</time>
