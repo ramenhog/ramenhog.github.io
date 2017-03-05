@@ -103,8 +103,8 @@ pre code {
       content: "";
       width: 100%;
       height: 4px;
-      border-top: 1px solid #e9f1ff;
-      border-bottom: 1px solid #e9f1ff;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
       position: absolute;
       left: 0;
       top: 50%;
@@ -126,7 +126,7 @@ pre code {
   left: 0;
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #e9f1ff;
+  border-bottom: 1px solid #e2e2e2;
   z-index: 100; }
   .nav__social-list {
     display: flex;
