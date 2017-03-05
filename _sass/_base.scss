@@ -12,9 +12,12 @@
   }
 
   &--main {
-    padding-top: 80px;
-    padding-right: 80px;
+    padding: 80px 80px 80px 22px;
   }
+}
+
+.posts {
+  margin-bottom: 130px;
 }
 
 .post {
@@ -26,7 +29,7 @@
     font-family: "PT Sans", sans-serif;
 
     a {
-      background: #fff;
+      background: $white;
       padding-right: 1em;
     }
        
@@ -35,8 +38,8 @@
         content: "";
         width: 100%;
         height: 4px;
-        border-top: 1px solid #e2e2e2;
-        border-bottom: 1px solid #e2e2e2;
+        border-top: 1px solid $mercury;
+        border-bottom: 1px solid $mercury;
         position: absolute;
         left: 0;
         top: 50%;
@@ -44,17 +47,44 @@
         z-index: -1;
     }
   }
+
+  &__title-link {
+    position: relative;
+    &:hover {
+      &:before {
+        content: "";
+        top: 0.4em;
+        left: 0.4em;
+        background-color: $blue; 
+        position: absolute;
+        width: 90%;
+        height: 1em;
+        z-index: 0;
+      }
+    }
+  }
+
+  &__title-text {
+    position: relative;
+    z-index: 1;
+  }
   
   &__date {
     font-size: 0.9rem;
     text-transform: uppercase;
-    color: #d2d0d0;
+    color: $alto;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
   }
 
   &__content {
     margin: 24px 0;
+  }
+
+  &__continue {
+    display: flex;
+    justify-content: flex-end;
+    color: $alto;
   }
 }
 
@@ -64,9 +94,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #e2e2e2;
+  background: $white;
+  border-bottom: 1px solid $mercury;
   z-index: 100;
+
+  &__logo {
+    font-size: 1rem;
+  }
 
   &__social-list {
     display: flex;
@@ -74,12 +108,26 @@
   }
 
   &__social-link {
-    margin-left: 20px;
+    margin-left: 2em;
+    font-size: 1.1rem;
+
+    &:hover {
+      color: $dark-blue;
+    }
   }
 }
 
 img {
+  margin: 20px 0;
   width: 114%;
   margin-left: -7%;
 }
 
+.pagination {
+  border-top: 1px solid $mercury;
+  margin-top: 30px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  color: $nobel;
+}

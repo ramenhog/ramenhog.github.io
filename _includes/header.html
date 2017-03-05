@@ -1,9 +1,11 @@
 <nav class="nav">
   <div class="container container--nav">
-    <h1 class="nav__logo"><a href="{{ site.url }}">ramenhog</a></h1>
+    <h1 class="nav__logo"><a href="{{ site.url }}" class="link" >{{site.title}}</a></h1>
     <ul class="nav__social-list">
-      <li class="nav__social-link"><a href="#" class="ion-social-twitter"></a></li>
-      <li class="nav__social-link"><a href="#" class="ion-ios-email-outline"></a></li>
+      <li class="nav__social-link"><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="ion-social-linkedin-outline"></a></li>
+      <li class="nav__social-link"><a href="https://twitter.com/{{ site.twitter_username }}"" target="_blank" class="ion-social-twitter"></a></li>
+      <li class="nav__social-link"><a href="https://github.com/{{ site.github_username }}" target="_blank" class="ion-social-github"></a></li>
+      <li class="nav__social-link"><a href="mailto:{{site.email}}" target="_blank" class="ion-paper-airplane"></a></li>
     </ul>
   </div>
 </nav>
