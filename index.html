@@ -19,12 +19,12 @@ layout: default
 {% if paginator.total_pages > 1 %}  
 <div class="pagination">  
   {% if paginator.previous_page %}  
-    <a class="link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="ion-ios-arrow-thin-left"></i> Newer</a>  
+    <a class="link" href="{{ paginator.previous_page_path | relative_url }}"><i class="ion-ios-arrow-thin-left"></i> Newer</a>  
   {% else %}
     <div></div>
   {% endif %}  
   {% if paginator.next_page %}  
-    <a class="link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older <i class="ion-ios-arrow-thin-right"></i></a>  
+    <a class="link" href="{{ paginator.next_page_path | relative_url }}">Older <i class="ion-ios-arrow-thin-right"></i></a>  
   {% else %}
     <div></div>
   {% endif %}  
