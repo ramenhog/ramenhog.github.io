@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Getting Started!"
-date: 2017-03-01
+title: "Blank State"
+date: 2017-03-06
 ---
 
 Welcome! To my new place of ramblings and thoughts and learnings. <3
