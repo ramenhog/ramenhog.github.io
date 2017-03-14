@@ -11,7 +11,7 @@ layout: default
     <div class="post__content">
       {{ post.excerpt }}
     </div>
-    <div class="post__continue"><a class="link" href="{{ post.url }}">Read on <i class="ion-ios-arrow-thin-right"></i></a></div>
+    <div class="post__continue"><a class="link" href="{{ post.url | relative_url }}">Read on <i class="ion-ios-arrow-thin-right"></i></a></div>
   </article>
 {% endfor %}
 </div>
