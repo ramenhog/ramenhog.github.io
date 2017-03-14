@@ -5,7 +5,7 @@ layout: default
 {% for post in paginator.posts %}
   <article class="post post--excerpt">
     <header class="post__title-bar">
-      <h2 class="post__title"><a class="post__title-link" href="{{post.url}}"><span class="post__title-text">{{ post.title }}</span></a></h2> 
+      <h2 class="post__title"><a class="post__title-link" href="{{post.url | relative_url}}"><span class="post__title-text">{{ post.title }}</span></a></h2> 
       <time class="post__date">{{ post.date  | date: "%m &bull; %d &bull; %Y" }}</time>
     </header>
     <div class="post__content">
