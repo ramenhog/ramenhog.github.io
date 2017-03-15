@@ -21,6 +21,11 @@
     font-size: 1.3rem;
     transition: color 0.3s ease-in-out;
 
+    @media #{$mobile} {
+      margin: 0 0.8em;
+      font-size: 1.5rem;
+    }
+
     &:hover {
       color: $nobel;
     }
