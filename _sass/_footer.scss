@@ -1,0 +1,28 @@
+.footer {
+  text-align: center;
+  background: $shuttle-gray;
+  color: $alabaster;
+
+  &__paragraph {
+    margin: 0;
+    font-size: 0.8rem;
+    color: $alabaster;
+  }
+
+  &__social-list {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__social-link {
+    margin: 0 1.3em;
+    font-size: 1.3rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $nobel;
+    }
+  }
+}

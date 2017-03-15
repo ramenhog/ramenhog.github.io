@@ -1,0 +1,18 @@
+.share-buttons {
+  margin: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 0;
+  color: $mercury;
+  border-bottom: 1px solid currentColor;
+  font-size: 1.4rem;
+
+  &__link {
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}

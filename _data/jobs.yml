@@ -1,0 +1,26 @@
+-   title: Front-end Engineer
+    company: Magento Commerce
+    period: Nov 2016 - Present
+    location: Philadelphia, PA
+    bullets: 
+      - Reorganize and expand on [a pattern library of reusable modular components](https://dashboard.rjmetrics.com/v2/styleguide)
+      - Implement best front-end practices for scalability
+      - Develop consistent user experiences with consideration to accessibility
+
+
+-   title: Software Engineer
+    company: Nuix
+    period: Mar 2016 - Oct 2016
+    location: Conshohocken, PA
+    bullets: 
+      - Worked tightly with a team of front-end developers to produce a beta React/Redux product
+
+-   title: Front-end Developer
+    company: RJMetrics, Inc.
+    period: Oct 2013 - Mar 2016
+    location: Philadelphia, PA
+    bullets: 
+      - Crafted a front-end process and structure for the marketing department
+      - Applied A/B testing to [optimize for maximum conversion rates](https://blog.rjmetrics.com/2014/02/06/testing-newbie-to-conversion-optimization-beast/)
+      - Utilized data-driven techniques to enhance user experiences
+      - Collaborated with designers to rapidly iterate on existing projects

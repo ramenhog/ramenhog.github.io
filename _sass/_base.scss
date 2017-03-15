@@ -1,5 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  color: $shuttle-gray;
+
+  &__paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 0.4em;
+  }
+
+  &__name {
+    color: $gray;
+  }
+
+  &__hi {
+    margin-bottom: 0.5em;
+  }
+
+  &__intro {
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
+}
+
 .container {
   position: relative;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 0 22px;
@@ -11,116 +39,69 @@
     align-items: center;
   }
 
-  &--main {
-    padding: 80px 80px 80px 22px;
-  }
-}
-
-.posts {
-  margin-bottom: 130px;
-}
-
-.post {
-  margin: 80px 0;
-
-  &__title {
-    position: relative;
-    margin-bottom: 24px;
-    font-family: "PT Sans", sans-serif;
-
-    a {
-      background: $white;
-      padding-right: 1em;
-    }
-       
-
-    &:after {
-        content: "";
-        width: 100%;
-        height: 4px;
-        border-top: 1px solid $mercury;
-        border-bottom: 1px solid $mercury;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: -1;
-    }
+  &--main,
+  &--frontpage {
+    flex: 1;
+    padding: 70px 22px;
   }
 
-  &__title-link {
-    position: relative;
-    &:hover {
-      &:before {
-        content: "";
-        top: 0.4em;
-        left: 0.4em;
-        background-color: $blue; 
-        position: absolute;
-        width: 90%;
-        height: 1em;
-        z-index: 0;
-      }
-    }
-  }
-
-  &__title-text {
-    position: relative;
-    z-index: 1;
-  }
-  
-  &__date {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    color: $alto;
-    font-weight: bold;
-    font-family: "PT Sans", sans-serif;
-  }
-
-  &__content {
-    margin: 24px 0;
-  }
-
-  &__continue {
-    display: flex;
-    justify-content: flex-end;
-    color: $nobel;
-  }
-}
-
-.nav {
-  padding: 30px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: $white;
-  border-bottom: 1px solid $mercury;
-  z-index: 100;
-
-  &__logo {
-    font-size: 1rem;
-  }
-
-  &__social-list {
+  &--frontpage {
     display: flex;
     align-items: center;
   }
 
-  &__social-link {
-    margin-left: 2em;
-    font-size: 1.1rem;
-
-    &:hover {
-      color: $dark-blue;
-    }
+  &--footer {
+    margin: 35px auto;
   }
 }
 
-img {
-  margin: 20px 0;
-  width: 114%;
-  margin-left: -7%;
+.nav {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba($background-color, 0.9);
+  border-bottom: 1px solid $mercury;
+  z-index: 100;
+
+  &__list {
+    color: $nobel;
+    font-size: 0.9rem;
+  }
+
+  &__list-item {
+    letter-spacing: 2px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  &__logo-link {
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: $dark-blue;
+
+      .nav__ramenhog {
+        path {
+          fill: currentColor;
+        }
+      }
+    }
+  }
+
+  &__ramenhog {
+    width: 50px;
+    margin-right: 10px;
+
+    path {
+      fill: $shuttle-gray;
+    }
+  }
 }
 
 .pagination {

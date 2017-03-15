@@ -1,0 +1,47 @@
+<div class="section">
+  <h3 class="section__title">Experience</h3>
+  {% for job in site.data.jobs %}
+  <div class="job">
+    <div class="job__info">
+      <p class="job__title">{{ job.title }}</p>
+      <p class="job__company">{{ job.company }}</p>
+      <p class="job__location">{{ job.location }}</p>
+      <p class="job__period">{{ job.period }}</p>
+    </div>
+    <div class="job__description">
+      <p>{{ job.description }}</p>
+      <ul class="job__list">
+        {% for bullet in job.bullets %}
+          <li class="job__list-item">{{ bullet | markdownify }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="section">
+  <h3 class="section__title">Skills</h3>
+  <ul class="skills__list">
+  {% for skill in site.data.skills %}
+    <li class="skills__list-item">{{skill}}</li>
+  {% endfor %}
+  </ul>
+</div>
+
+<div class="section">
+  <h3 class="section__title">Education</h3>
+  {% for education in site.data.education %}
+  <div class="job job--education">
+    <div class="job__info job__info--education">
+      <p class="job__title">{{ education.school }}</p>
+      <p class="job__location">{{ education.location }}</p>
+      <p class="job__period">{{ education.period }}</p>
+    </div>
+    <div class="job__description job__description--education">
+      <p>{{ education.degree }}</p>
+      <p>{{ education.minor }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>

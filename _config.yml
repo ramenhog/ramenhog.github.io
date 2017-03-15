@@ -7,8 +7,8 @@ description: > # this means to ignore newlines until "baseurl:"
     You can edit this line in _config.yml. It will appear
     in your document head meta (for Google search results)
     and in your feed.xml site description.
-baseurl: "/musings" # the subpath of your site, e.g. /blog/
-url: "ramenhog.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "ramenhog.com" # the base hostname & protocol for your site
 
 # Build settings
 
@@ -26,9 +26,11 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 
 # Social LInks
 twitter_username:     ramenhog
 github_username:      ramenhog
 linkedin_username:    ramenhog
+codepen_username:     ramenhog

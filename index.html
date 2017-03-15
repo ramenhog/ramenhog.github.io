@@ -1,32 +1,9 @@
 ---
-layout: default
+layout: frontpage
 ---
-<div class="posts">
-{% for post in paginator.posts %}
-  <article class="post post--excerpt">
-    <header class="post__title-bar">
-      <h2 class="post__title"><a class="post__title-link" href="{{post.url | relative_url}}"><span class="post__title-text">{{ post.title }}</span></a></h2> 
-      <time class="post__date">{{ post.date  | date: "%m &bull; %d &bull; %Y" }}</time>
-    </header>
-    <div class="post__content">
-      {{ post.excerpt }}
-    </div>
-    <div class="post__continue"><a class="link" href="{{ post.url | relative_url }}">Read on <i class="ion-ios-arrow-thin-right"></i></a></div>
-  </article>
-{% endfor %}
-</div>
 
-{% if paginator.total_pages > 1 %}  
-<div class="pagination">  
-  {% if paginator.previous_page %}  
-    <a class="link" href="{{ paginator.previous_page_path | relative_url }}"><i class="ion-ios-arrow-thin-left"></i> Newer</a>  
-  {% else %}
-    <div></div>
-  {% endif %}  
-  {% if paginator.next_page %}  
-    <a class="link" href="{{ paginator.next_page_path | relative_url }}">Older <i class="ion-ios-arrow-thin-right"></i></a>  
-  {% else %}
-    <div></div>
-  {% endif %}  
-</div>  
-{% endif %}  
+<div class="hero">
+  <h1 class="hero__hi">Heyo, I'm <strong class="hero__name">Stef</strong>.</h1>
+  <h2 class="hero__intro">I'm currently a front-end engineer at Magento Commerce, working on their business intelligence product, <a href="https://rjmetrics.com" class="link">Magento BI</a>.</h2>
+  <p class="hero__paragraph">Learn more about my experiences <a href="/resume" class="link">here</a> and my ponderings <a href="/blog" class="link">there</a>.</p>
+</div>

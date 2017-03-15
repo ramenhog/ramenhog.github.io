@@ -1,0 +1,125 @@
+$spacer: 20px;
+
+.resume {
+  margin-top: ($spacer * 3);
+}
+
+.section {
+  margin-bottom: ($spacer * 3);
+
+  &__title {
+    font-family: "PT Sans", sans-serif;
+    padding: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: ($spacer * 2);
+    text-align: center;
+    position: relative;
+    color: $gray;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      margin-left: -25px;
+      width: 50px;
+      height: 1px;
+      background: #222;
+    }
+  }
+}
+
+.skills {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    font-family: "PT Sans", sans-serif;
+    margin: 0 15px 15px;
+    color: $shuttle-gray;
+  }
+}
+
+.job {
+  margin: ($spacer * 2) auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &--education {
+    width: 70%;
+  }
+
+  &__info {
+    margin-right: $spacer;
+    flex: 1;
+
+    &--education {
+      text-align: right;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &__title,
+  &__company {
+    color: $gray;
+  }
+
+  &__company,
+  &__period,
+  &__location {
+    font-family: "PT Sans", sans-serif;
+  }
+
+  &__location {
+    font-size: 0.9rem;
+    color: $shuttle-gray;
+  }
+
+  &__period {
+    color: $nobel;
+    font-size: 0.85rem;
+  }
+
+  &__list {
+    font-size: 0.95rem;
+    margin: 0;
+    padding-left: 15px;
+    list-style: circle;
+    color: $shuttle-gray;
+  }
+
+  &__list-item {
+    margin: 0 0 10px;
+    line-height: 1.4;
+
+    p {
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+
+    a {
+      @include link;
+    }
+  }
+
+  &__description {
+    flex: 2;
+
+    &--education {
+      flex: 1;
+    }
+  }
+}
