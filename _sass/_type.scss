@@ -66,7 +66,8 @@ pre {
   box-sizing: border-box;
   transition: color 0.3s ease-in-out;
 
-  &:active {
+  &:active,
+  &:focus {
     color: darken($dark-blue, 10%);
   }
 
