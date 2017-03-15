@@ -66,6 +66,10 @@ pre {
   box-sizing: border-box;
   transition: color 0.3s ease-in-out;
 
+  &:active {
+    color: darken($dark-blue, 10%);
+  }
+
   &:hover {
     color: $shuttle-gray;
 
