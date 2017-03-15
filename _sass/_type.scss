@@ -8,7 +8,7 @@ body {
   color: $gray;
 
   @media #{$mobile} {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -21,7 +21,7 @@ h1 {
   font-size: 3rem;
 
   @media #{$mobile} {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -29,7 +29,7 @@ h2 {
   font-size: 1.6rem;
 
   @media #{$mobile} {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
