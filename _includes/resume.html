@@ -21,19 +21,10 @@
 </div>
 
 <div class="section">
-  <h3 class="section__title">Skills</h3>
-  <ul class="skills__list">
-  {% for skill in site.data.skills %}
-    <li class="skills__list-item">{{skill}}</li>
-  {% endfor %}
-  </ul>
-</div>
-
-<div class="section">
   <h3 class="section__title">Education</h3>
   {% for education in site.data.education %}
   <div class="job job--education">
-    <div class="job__info job__info--education">
+    <div class="job__info">
       <p class="job__title">{{ education.school }}</p>
       <p class="job__location">{{ education.location }}</p>
       <p class="job__period">{{ education.period }}</p>
@@ -44,4 +35,13 @@
     </div>
   </div>
   {% endfor %}
+</div>
+
+<div class="section">
+  <h3 class="section__title">Skills</h3>
+  <ul class="skills__list">
+  {% for skill in site.data.skills %}
+    <li class="skills__list-item">{{skill}}</li>
+  {% endfor %}
+  </ul>
 </div>
