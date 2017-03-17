@@ -2,7 +2,7 @@
 layout: post
 title: "An Exercise in Masonry"
 date: 2017-03-17
-description: Creating masonry layouts with only CSS.
+description: Creating masonry layouts with only CSS
 ---
 
 If you're like me, something about masonry layouts yeah.

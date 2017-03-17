@@ -13,7 +13,7 @@
 
   <a
     class="share-buttons__link"
-    href="https://twitter.com/intent/tweet?url={{url}}{% if page.description %}&text={{ page.description | url_escape }}{% else %}{{ page.title | url_escape }}{% endif %}{% if site.twitter %}&via={{ site.twitter }}{% endif %}"
+    href="https://twitter.com/intent/tweet?url={{url}}{% if page.description %}&text={{ page.description | url_escape }}%20by%20@{{site.twitter_username}}{% else %}{{ page.title | url_escape }}{% endif %}{% if site.twitter %}&via={{ site.twitter }}{% endif %}"
     onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
     title="Share on Twitter" >
     <i class="ion-social-twitter"></i>
