@@ -3,12 +3,17 @@
 }
 
 .post {
-  margin: 80px 0 0;
+  margin: 5rem 0 0;
+
+  @media #{$mobile} {
+    margin: 2rem 0 0;
+  }
 
   &__title {
     position: relative;
     margin-bottom: 24px;
     font-family: "PT Sans", sans-serif;
+    font-size: 1.6rem;
 
     a {
       background: $background-color;
@@ -74,6 +79,10 @@
     p {
       margin-top: 30px;
       line-height: 2;
+
+      @media #{$mobile} {
+        font-size: 1.2rem;
+      }
     }
 
     img,

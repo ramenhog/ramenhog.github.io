@@ -1,11 +1,15 @@
 .share-buttons {
-  margin: 50px 0;
+  margin: 3rem 0;
   display: flex;
   justify-content: flex-end;
-  padding: 25px 0;
+  padding: 1.5rem 0;
   color: $mercury;
   border-bottom: 1px solid currentColor;
   font-size: 1.4rem;
+
+  @media #{$mobile} {
+    margin: 0 0 3rem;
+  }
 
   &__link {
     margin: 0 15px;
