@@ -1,7 +1,11 @@
+{% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+{% if page.shortUrl != null %}
+    {% assign url = page.shortUrl %}
+{% endif %}
 <div class="share-buttons">
   <a
     class="share-buttons__link"
-    href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    href="https://www.facebook.com/sharer/sharer.php?u={{url}}"
     onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
     title="Share on Facebook" >
     <i class="ion-social-facebook"></i>
@@ -9,7 +13,7 @@
 
   <a
     class="share-buttons__link"
-    href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}{% if page.description %}&text={{ page.description | url_escape }}{% else %}{{ page.title | url_escape }}{% endif %}{% if site.twitter %}&via={{ site.twitter }}{% endif %}"
+    href="https://twitter.com/intent/tweet?url={{url}}{% if page.description %}&text={{ page.description | url_escape }}{% else %}{{ page.title | url_escape }}{% endif %}{% if site.twitter %}&via={{ site.twitter }}{% endif %}"
     onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
     title="Share on Twitter" >
     <i class="ion-social-twitter"></i>
@@ -17,7 +21,7 @@
 
   <a
     class="share-buttons__link"
-    href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{url}}"
     title="Share via Email" >
     <i class="ion-paper-airplane"></i>
   </a>
