@@ -26,12 +26,12 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 paginate: 5
-paginate_path: "/blog/:year/:month/:day/page:num/"
+paginate_path: "/blog/page:num/"
 
 collections:
   posts:
     output: true
-    permalink: /blog/:categories/:title
+    permalink: /blog/:year/:month/:day/:categories/:title
 
 
 # Social LInks
