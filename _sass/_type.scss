@@ -68,26 +68,11 @@ pre {
 
   &:active,
   &:focus {
-    color: darken($dark-blue, 10%);
+    color: darken($link-hover, 20%);
   }
 
   &:hover {
-    color: $shuttle-gray;
-
-    &:before {
-      content: "";
-      top: 0.5em;
-      left: 0.4em;
-      background-color: $blue; 
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-
-      @media #{$mobile} {
-        content: initial;
-      }
-    }
+    color: $link-hover;
   }
 }
 

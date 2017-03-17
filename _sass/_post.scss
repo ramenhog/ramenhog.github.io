@@ -37,18 +37,7 @@
 
   &__title-link {
     position: relative;
-    &:hover {
-      &:before {
-        content: "";
-        top: 0.4em;
-        left: 0.4em;
-        background-color: $blue; 
-        position: absolute;
-        width: 90%;
-        height: 1em;
-        z-index: 0;
-      }
-    }
+    border: none;
   }
 
   &__title-text {
@@ -73,7 +62,7 @@
       border-bottom: 1px solid currentColor;
 
       &:hover {
-        color: $dark-blue;
+        color: $link-hover;
       }
     }
     
