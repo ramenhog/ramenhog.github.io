@@ -4,7 +4,7 @@ layout: default
 <article class="post">
   <header class="post__title-bar">
     <h2 class="post__title"><a href="{{page.url | relative_url}}">{{ page.title }}</a></h2> 
-    <time class="post__date">{{ page.date  | date: "%m &bull; %d &bull; %Y" }}</time>
+    <time class="post__date">{{ page.date  | date: "%B %-d %Y" }}</time>
   </header>
   <div class="post__content">
     {{ content }}
