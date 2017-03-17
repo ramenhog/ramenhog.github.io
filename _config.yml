@@ -26,7 +26,7 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/:year/:month/:day/page:num/"
 
 collections:
   posts:
