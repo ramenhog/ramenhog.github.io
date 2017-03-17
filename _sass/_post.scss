@@ -76,10 +76,17 @@
       line-height: 2;
     }
 
-    img {
-      margin: 20px 0;
+    img,
+    .image {
+      display: block;
+      margin: 20px auto;
       width: 114%;
       margin-left: -7%;
+
+      &--small {
+        margin: 20px auto;
+        width: 70%;
+      }
 
       &+ em {
         margin: -10px 0 20px;
