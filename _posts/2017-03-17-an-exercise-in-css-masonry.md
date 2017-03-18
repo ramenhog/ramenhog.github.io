@@ -2,7 +2,7 @@
 layout: post
 title: "An exercise in CSS masonry"
 date: 2017-03-17
-description: Creating masonry layouts with pure CSS
+description: Creating Pinterest-style masonry layouts with pure CSS
 image: /assets/pinterest-masonry.png
 ---
 
