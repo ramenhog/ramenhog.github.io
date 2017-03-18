@@ -8,6 +8,7 @@ description: Creating masonry layouts with pure CSS
 If you're like me, you're pretty obsessed with  [Pinterest](https://www.pinterest.com/){:target="_blank"}.
 
 It’s been my go-to spot for inspiration, whether it be for recipes, design, fashion, or hedgies. One of the reasons I love browsing Pinterest is due to how elegantly their UI implements the *Masonry layout*, offering a pleasant viewing experience of a large amount of images. In fact, Pinterest so popularized the use of this layout that it’s also known as the “Pinterest style layout”.
+<!--more-->
 
 ![The Pinterest masonry grid](/assets/pinterest-masonry.png)
 _A masonry of hedgies!!! 😍_
@@ -261,9 +262,9 @@ Check out this method below:
 ## All in All
 While flexbox implementations of the masonry layout can be achieved, they require a lot more forethought, aren’t desirable for scaling, and are simply rather hacky. For a pure CSS solution, the multi-column method wins out pretty fairly and squarely. 
 
-However, it is still not perfect. It will fall short when you have to support browsers that don’t offer complete support of the CSS multi-column layout. Or even when you want the items in your grid to be sortable, instead of hardcoded in order. For those situation, you will still have to resort to a fallback in the form of a [javascript solution](http://masonry.desandro.com/){:target="_blank"}.
+However, it is still not perfect. It will fall short when you have to support browsers that don’t offer complete support of the CSS multi-column layout. Or even when you want the items in your grid to be sortable, instead of hardcoded in order. For those situation, you will still have to resort to a fallback in the form of a [JavaScript solution](http://masonry.desandro.com/){:target="_blank"}.
 
 So, phew, long post, but those are my experiences with pure CSS masonry layouts. I would love to hear about your experiences, thoughts, critiques, and/or questions! 
 
-And also, first ever technical blog post, yay! 
+And also, first ever technical blog post, yay! 🎉
 
