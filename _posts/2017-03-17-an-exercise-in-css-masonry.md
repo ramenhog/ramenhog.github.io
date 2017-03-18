@@ -8,22 +8,19 @@ image:
   facebook: /assets/pinterest-masonry.png
 ---
 
-If you're like me, you're pretty obsessed with  [Pinterest](https://www.pinterest.com/){:target="_blank"}.
+Masonry layouts have been around a long time. You'll most likely recognize it's use on Pinterest. In fact, [Pinterest](https://pinterest.com){:target="_blank"} so popularized the use of this layout that it’s also known as the “Pinterest style layout”. But even after being around for a while, they’re still one of the most effective ways of laying out a gallery, a portfolio, a dashboard, or any grouping of times.  Masonry, at it’s core, is a grid-based layout with rows containing items of variable heights. However, as these dynamically sized items wrap and stack on top of each other, they leave no unnecessary gap between the items.
 
-It’s been my go-to spot for inspiration, whether it be for recipes, design, fashion, or hedgies. One of the reasons I love browsing Pinterest is due to how elegantly their UI implements the *Masonry layout*, offering a pleasant viewing experience of a large amount of images. In fact, Pinterest so popularized the use of this layout that it’s also known as the “Pinterest style layout”.
 <!--more-->
 
 ![The Pinterest masonry grid](/assets/pinterest-masonry.png)
 _A masonry of hedgies!!! 😍_
 
-Masonry layouts have been around a long time. But they’re still one of the most effective ways of laying out a gallery, a portfolio, a dashboard, or any grouping of times.  Masonry, at it’s core, is a grid-based layout with rows containing items of variable heights. However, as these dynamically sized items wrap and stack on top of each other, they leave no unnecessary gap between the items. While simple in theory (“maybe we can just use floats?”), CSS does not make this easy to implement.
-
-Using floats will not reduce the spaces between differently sized items. Instead you will end up with something along the lines of this:
+While a simple layout in theory (“maybe we can just use floats?”), CSS does not actually make this easy to implement. Using floats will not reduce the spaces between differently sized items. Instead you will end up with something along the lines of this:
 
 ![float based blocks](/assets/floating-blocks.png)
 _eh…no_
 
-So today I’m going to explore two pure CSS methods I’ve found useful in implementing the Masonry layout.
+However, it _is_ possible to achieve a basic masonry layout without any JavaScript. So today I’m going to explore two pure CSS methods I’ve found useful in implementing this layout.
 
 ## CSS multi-columns
 The [CSS multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Using_multi-column_layouts){:target="_blank"} was first introduced with CSS3 to allow for breaking a block of text into multiple columns, giving readers a more newspaper-like reading experience. 
