@@ -72,13 +72,21 @@
       font-weight: 700;
       margin: 3rem 0 1.5rem;
     }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+    }
     
     p {
       margin-top: 1.5rem;
       line-height: 2;
 
       @media #{$mobile} {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
     }
 
