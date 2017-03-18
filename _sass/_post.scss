@@ -65,9 +65,16 @@
         color: $link-hover;
       }
     }
+
+    h2,
+    h3,
+    h4 {
+      font-weight: 700;
+      margin: 3rem 0 1.5rem;
+    }
     
     p {
-      margin-top: 30px;
+      margin-top: 1.5rem;
       line-height: 2;
 
       @media #{$mobile} {
@@ -75,10 +82,26 @@
       }
     }
 
+    ol {
+      margin: 2rem 0 2rem 2.5rem;
+      list-style-type: decimal;
+    }
+
+    li {
+      margin: 1rem 0;
+      line-height: 1.4;
+    }
+
+    figure.highlight {
+      width: 114%;
+      margin: 1.6rem 0 1.6rem -7%;
+    }
+
     img,
-    .image {
+    .image,
+    .cp_embed_wrapper {
       display: block;
-      margin: 20px auto;
+      margin: 1.6rem auto;
       width: 114%;
       margin-left: -7%;
 
