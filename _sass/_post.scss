@@ -103,6 +103,11 @@
     figure.highlight {
       width: 114%;
       margin: 1.6rem 0 1.6rem -7%;
+
+      @media #{$ipad} {
+        width: 100%;
+        margin: 1.6rem auto;
+      }
     }
 
     img,
@@ -112,6 +117,11 @@
       margin: 1.6rem auto;
       width: 114%;
       margin-left: -7%;
+
+      @media #{$ipad} {
+        width: 100%;
+        margin: 1.6rem auto;
+      }
 
       &--small {
         margin: 20px auto;
