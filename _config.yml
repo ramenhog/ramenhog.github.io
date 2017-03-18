@@ -19,25 +19,43 @@ permalink: /:categories/:title
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate]
+gems:      [jekyll-paginate, jekyll-seo-tag]
 
+# Syntax Highlighting
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
+
+# Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
 
+# Post Excerpt
 excerpt_separator: <!--more-->
 
+# Permalink
 collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:categories/:title
 
 
-# Social LInks
+# Social Links
 twitter_username:     ramenhog
 github_username:      ramenhog
 linkedin_username:    ramenhog
 codepen_username:     ramenhog
+
+# SEO Settings
+twitter:
+  username: ramenhog
+author: 
+  twitter: ramenhog
+social:
+  name: Stephanie Liu
+  links:
+    - https://twitter.com/ramenhog
+    - https://www.linkedin.com/in/ramenhog
+    - https://github.com/ramenhog
+    - http://codepen.io/ramenhog/
