@@ -50,6 +50,11 @@ twitter:
   username: ramenhog
 author: 
   twitter: ramenhog
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/ramenhog.jpg
 social:
   name: Stephanie Liu
   links:
