@@ -110,6 +110,10 @@
       }
     }
 
+    em {
+      font-style: italic;
+    }
+
     img,
     .image,
     .cp_embed_wrapper {
@@ -129,6 +133,7 @@
       }
 
       &+ em {
+        font-style: none;
         margin: -10px 0 20px;
         color: $nobel;
         font-size: 0.9rem;

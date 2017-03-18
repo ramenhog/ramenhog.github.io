@@ -8,7 +8,9 @@ image:
   facebook: /assets/pinterest-masonry.png
 ---
 
-Masonry layouts have been around a long time. You'll most likely recognize it's use on Pinterest. In fact, [Pinterest](https://pinterest.com){:target="_blank"} so popularized the use of this layout that it’s also known as the “Pinterest style layout”. But even after being around for a while, they’re still one of the most effective ways of laying out a gallery, a portfolio, a dashboard, or any grouping of times.  Masonry, at it’s core, is a grid-based layout with rows containing items of variable heights. However, as these dynamically sized items wrap and stack on top of each other, they leave no unnecessary gap between the items.
+Masonry layouts have been around a long time. You'll most likely recognize its use on Pinterest. In fact, [Pinterest](https://pinterest.com){:target="_blank"} so popularized the use of this layout that it’s also known as the “Pinterest style layout”. 
+
+But even after being around for a while, they’re still one of the most effective ways of laying out a gallery, a portfolio, a dashboard, or any grouping of times.  Masonry, at its core, is a grid-based layout with rows containing items of variable heights. However, as these dynamically sized items wrap and stack on top of each other, they leave no unnecessary gap between the items.
 
 <!--more-->
 
@@ -57,7 +59,7 @@ The div with class `.masonry` will serve as the main container for all the diffe
 
 `Column count` is used for dictating the number of columns you want to appear in your layout. In this case, we're creating a masonry layout with five columns, so we're simply setting that property to five.  The browser will then automatically set the maximum column height for each column so that they are all roughly equal in height.
 
-We are also setting `column-gap` to 0, which controls the amount of space between columns, but _not_ rows. So, instead of dictating that space on each column, we’ll actually let the `.item` element take care of that with it’s own padding. These `.item` elements actually act as a container to control the spacing between elements. This way the spacing all around each item will stay consistent without any funky wrapping.
+We are also setting `column-gap` to 0, which controls the amount of space between columns, but _not_ rows. So, instead of dictating that space on each column, we’ll actually let the `.item` element take care of that with its own padding. These `.item` elements actually act as a container to control the spacing between elements. This way the spacing all around each item will stay consistent without any funky wrapping.
 
 {% highlight css %}
 .item {
