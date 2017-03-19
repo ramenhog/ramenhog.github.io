@@ -17,7 +17,7 @@ permalink: /:categories/:title
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate, jekyll-seo-tag, octopress-autoprefixer]
+gems:      [jekyll-paginate, jekyll-seo-tag, jekyll-assets]
 
 # Syntax Highlighting
 kramdown:
@@ -44,6 +44,12 @@ twitter_username:     ramenhog
 github_username:      ramenhog
 linkedin_username:    ramenhog
 codepen_username:     ramenhog
+
+assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
 
 # SEO Settings
 twitter:
