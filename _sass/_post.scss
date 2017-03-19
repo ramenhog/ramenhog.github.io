@@ -14,11 +14,11 @@
     margin-bottom: 24px;
     font-family: "PT Sans", sans-serif;
     font-size: 1.6rem;
-    font-weight: normal;
 
     a {
       background: $background-color;
       padding-right: 1em;
+      font-weight: normal;
     }
        
 
@@ -145,6 +145,7 @@
   }
 
   &__continue {
+    font-weight: normal;
     display: flex;
     justify-content: flex-end;
     color: $nobel;
