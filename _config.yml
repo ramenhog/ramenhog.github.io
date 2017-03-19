@@ -17,7 +17,7 @@ permalink: /:categories/:title
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate, jekyll-seo-tag]
+gems:      [jekyll-paginate, jekyll-seo-tag, octopress-autoprefixer]
 
 # Syntax Highlighting
 kramdown:
