@@ -266,7 +266,7 @@ While flexbox implementations of the masonry layout can be achieved, they requir
 
 However, it is still not perfect. It will fall short when you have to support browsers that don’t offer complete support of the CSS multi-column layout. Or even when you want the items in your grid to be sortable, instead of hardcoded in order. For those situation, you will still have to resort to a fallback in the form of a [JavaScript solution](http://masonry.desandro.com/){:target="_blank"}.
 
-So, phew, long post, but those are my experiences with pure CSS masonry layouts. I would love to hear about your experiences, thoughts, critiques, and/or questions! Feel free to [tweet at](https://twitter.com/ramenhog){:target="_blank"} or [email](mailto:stephofliu@gmail.com) me.
+So, phew, long post, but those are my experiences with pure CSS masonry layouts. I would love to hear about your experiences, thoughts, critiques, and/or questions! 
 
 And also, first ever technical blog post, yay! 🎉
 
