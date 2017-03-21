@@ -4,6 +4,7 @@ html,
 body {
   font-family: "PT Serif", serif; 
   font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $gray;
   width: 100%;
