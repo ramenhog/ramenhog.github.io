@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An exercise in CSS masonry"
-date: 2017-04-04
+date: 2017-04-05
 description: Creating Pinterest-style masonry layouts with pure CSS
 image: 
   twitter: /assets/pinterest-masonry.png
