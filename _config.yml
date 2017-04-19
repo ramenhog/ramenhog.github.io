@@ -54,7 +54,7 @@ assets:
 # SEO Settings
 twitter:
   username: ramenhog
-author: ramenhog
+author: Stephanie Liu
 defaults:
   - scope:
       path: ""
