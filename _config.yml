@@ -54,8 +54,7 @@ assets:
 # SEO Settings
 twitter:
   username: ramenhog
-author: 
-  twitter: ramenhog
+author: ramenhog
 defaults:
   - scope:
       path: ""
