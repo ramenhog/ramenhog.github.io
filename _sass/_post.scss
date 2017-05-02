@@ -2,6 +2,13 @@
   margin-bottom: 130px;
 }
 
+%images {
+  display: block;
+  margin: 1.6rem auto;
+  width: 114%;
+  margin-left: -7%;
+}
+
 .post {
   margin: 5rem 0 0;
 
@@ -76,6 +83,7 @@
 
     h2 {
       font-size: 1.7rem;
+      line-height: 1.4;
     }
 
     h3 {
@@ -118,10 +126,7 @@
     img,
     .image,
     .cp_embed_wrapper {
-      display: block;
-      margin: 1.6rem auto;
-      width: 114%;
-      margin-left: -7%;
+      @extend %images;
 
       @media #{$ipad} {
         width: 100%;
@@ -141,6 +146,22 @@
         text-align: center;
         display: block;
       }
+    }
+  }
+
+  &__video {
+    @extend %images;
+    position: relative;
+    padding-top: 64.13%;
+    height: 0;
+    overflow: hidden;
+
+    &>iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 
