@@ -62,6 +62,7 @@ pre {
     display: block;
     padding: 30px;
     font-size: 0.95rem;
+    font-weight: 400;
     line-height: 1.5;
   }
 }
@@ -70,8 +71,8 @@ code {
   border: 1px solid $alto;
   padding: 4px 6px;
   font-family: monospace;
-  font-size: 0.8rem;
-  color: $magenta;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 @mixin link {
