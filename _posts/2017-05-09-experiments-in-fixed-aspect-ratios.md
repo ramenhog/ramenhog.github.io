@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Experiments in fixed aspect ratios"
-date: 2017-05-05
+date: 2017-05-09
 description: Revisiting responsive aspect ratios techniques with CSS Grid
 image: 
   twitter: /assets/responsive-aspect-ratio.gif
