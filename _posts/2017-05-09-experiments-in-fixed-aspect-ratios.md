@@ -123,9 +123,9 @@ Still, I appreciate CSS Grid for giving us some new approaches to age old proble
 > I wish big time there were a way to transfer a calculated size from one dimension to the other. AKA… I define columns to be 1fr each. And I want the cells to be squares (or always have a 16x9 ratio, or whatever — but to maintain a fixed aspect ratio). How can I define the rows to be 1fr-from-the-column-calculation?? I want that.
 _Jen Simmons, [https://github.com/w3c/csswg-drafts/issues/333](https://github.com/w3c/csswg-drafts/issues/333){:target="_blank"}_
 
-Yes. We want that. Please. 😁
+As powerful as CSS Grid already is now, having a spec like that would be a game changer. CSS Grid containers would almost resemble graph paper, which would give us even more control over sizing grid elements two dimensionally. Maintaining responsive aspect ratios would be a breeze.
 
-So for now, especially taking [CSS Grid browser support](http://caniuse.com/#feat=css-grid){:target="_blank"} into consideration, the "tried and true" method, is still your best bet for most situations that involve maintaining aspect ratios; it hasn't failed me yet! But here's to hoping for more exciting CSS developments relating to aspect ratios in the future!
+But, for now, especially taking [CSS Grid browser support](http://caniuse.com/#feat=css-grid){:target="_blank"} into consideration, the "tried and true" method, is still your best bet for most situations that involve maintaining aspect ratios. It hasn't failed me yet! But as CSS Grid begins to mature and expand its capabilities, here's to hoping for more exciting CSS developments relating to aspect ratios in the future!
 
 <img src="/assets/fingers-crossed.gif" alt="Fingers crossed!" class="image image--small" />
 
