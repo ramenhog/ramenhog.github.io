@@ -2,7 +2,7 @@
 layout: post
 title: "Creating a draggable element with JavaScript"
 date: 2017-05-01
-description: Utilizing mouse events and math to create elements a user can drag with their mouse with vanilla JavaScript
+description: Creating draggable elements with vanilla JavaScript
 image: 
   twitter: /assets/move-me.gif
   facebook: /assets/move-me.gif
