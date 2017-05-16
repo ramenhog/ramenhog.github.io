@@ -37,7 +37,7 @@ And the CSS for the parent container would look like this:
   position: relative;
   width: 100%;
   height: 0;
-  padding-top: 56.25% // 9 / 16 * 100%
+  padding-top: 56.25% /* 9 / 16 * 100% */
 }
 {% endhighlight %}
 
