@@ -4,6 +4,7 @@
 
 @mixin images {
   display: block;
+  border: 1px solid $alto;
   margin: 1.6rem auto;
   width: 114%;
   margin-left: -7%;
@@ -166,6 +167,10 @@
           color: $nobel;
         }
       }
+    }
+
+    pre {
+      overflow: scroll;
     }
   }
 
