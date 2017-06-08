@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Theming with CSS Custom Properties"
-date: 2017-06-05
+date: 2017-06-07
 description: Why you should care about CSS variables and what they mean for app theming
 image: 
   twitter: /assets/css-variable-theming/theming-with-css-variables.gif
